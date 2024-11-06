@@ -57,3 +57,13 @@ C:\Users\Oktay Çalışkan\source\repos\NovaCafe\NovaCafe\obj\Debug\NovaCafe.csp
 C:\Users\Oktay Çalışkan\source\repos\NovaCafe\NovaCafe\obj\Debug\NovaCafe.csproj.CopyComplete
 C:\Users\Oktay Çalışkan\source\repos\NovaCafe\NovaCafe\obj\Debug\NovaCafe.dll
 C:\Users\Oktay Çalışkan\source\repos\NovaCafe\NovaCafe\obj\Debug\NovaCafe.pdb
+C:\Users\rampa\OneDrive\Belgeler\GitHub\NovaCafe\NovaCafe\bin\NovaCafe.dll.config
+C:\Users\rampa\OneDrive\Belgeler\GitHub\NovaCafe\NovaCafe\bin\NovaCafe.dll
+C:\Users\rampa\OneDrive\Belgeler\GitHub\NovaCafe\NovaCafe\bin\NovaCafe.pdb
+C:\Users\rampa\OneDrive\Belgeler\GitHub\NovaCafe\NovaCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\rampa\OneDrive\Belgeler\GitHub\NovaCafe\NovaCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\rampa\OneDrive\Belgeler\GitHub\NovaCafe\NovaCafe\obj\Debug\NovaCafe.csproj.AssemblyReference.cache
+C:\Users\rampa\OneDrive\Belgeler\GitHub\NovaCafe\NovaCafe\obj\Debug\NovaCafe.csproj.CoreCompileInputs.cache
+C:\Users\rampa\OneDrive\Belgeler\GitHub\NovaCafe\NovaCafe\obj\Debug\NovaCafe.csproj.CopyComplete
+C:\Users\rampa\OneDrive\Belgeler\GitHub\NovaCafe\NovaCafe\obj\Debug\NovaCafe.dll
+C:\Users\rampa\OneDrive\Belgeler\GitHub\NovaCafe\NovaCafe\obj\Debug\NovaCafe.pdb
