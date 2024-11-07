@@ -8,23 +8,33 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="Assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Assets/fontawesome-free-6.3.0-web/css/all.min.css" rel="stylesheet" />
     <link href="Assets/Css.css" rel="stylesheet" />
 
 </head>
+     <style>
+        .card-img-overlay {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    </style>
 <body>
     <form id="form1" class="p-0 m-0" runat="server">
         <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 m-0">
-            <div class="container-fluid">
-                <div class="navbar-collapse bg-secondary p-0 m-0" id="navbarNav">
+            <div class="container-fluid p-0 m-0">
+                <div class="navbar-collapse bg-dark p-0 m-0" id="navbarNav">
                     <ul class="navbar-nav flex-row">
                         <li class="nav-item px-5 mt-3 ">
-                            <a class="nav-link text-dark fw-bold" aria-current="page" href="#">Anasayfa</a>
+                            <a class="nav-link text-white fw-bold" aria-current="page" href="#">Anasayfa</a>
                         </li>
                         <li class="nav-item px-5 mt-3 ">
-                            <a class="nav-link text-dark fw-bold" href="#">LOGO</a>
+                            <a class="nav-link text-white fw-bold" href="#">LOGO </a>
                         </li>
                         <li class="nav-item px-5">
-                            <a class="nav-link text-dark fw-bold" href="#">Kampanyalı Menüler</a>
+                            <a class="nav-link text-white fw-bold" href="#">Kampanyalı Menüler</a>
                         </li>
                         <%-- <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
