@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovaCafe", "NovaCafe\NovaCafe.csproj", "{CC75F8B8-B00E-4C80-BAC6-01266AF45952}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{C060DBD6-1AF5-4E07-B744-109D6F58FFB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CC75F8B8-B00E-4C80-BAC6-01266AF45952}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC75F8B8-B00E-4C80-BAC6-01266AF45952}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC75F8B8-B00E-4C80-BAC6-01266AF45952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C060DBD6-1AF5-4E07-B744-109D6F58FFB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C060DBD6-1AF5-4E07-B744-109D6F58FFB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C060DBD6-1AF5-4E07-B744-109D6F58FFB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C060DBD6-1AF5-4E07-B744-109D6F58FFB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
