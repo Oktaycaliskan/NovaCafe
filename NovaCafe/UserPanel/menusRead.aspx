@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <h2 class="mt-2 mb-2"><a class="link-primary  text-decoration-none" href="#"><i class="fa-solid fa-reply"></i>Geri </a></h2>
+        <h2 class="mt-2 mb-2"><a class="link-primary  text-decoration-none" href="menus.aspx"><i class="fa-solid fa-reply"></i>Geri </a></h2>
         <div class="div">
             <h3 class="text-center mt-2 mb-2">Kahvaltı Tabağı 310.00 ₺</h3>
             <img src="Assets/Img/fastfood.jpg" class="img-thumbnail h-100 w-100" alt="Alternate Text" />
