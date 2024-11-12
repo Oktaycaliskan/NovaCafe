@@ -1087,6 +1087,8 @@
     <Content Include="AdminPanel\js\tooltips.js" />
     <Content Include="AdminPanel\js\widgets.js" />
     <Content Include="AdminPanel\ListCategory.aspx" />
+    <Content Include="AdminPanel\ListProducts.aspx" />
+    <Content Include="AdminPanel\ListPromotionalMenus.aspx" />
     <Content Include="AdminPanel\notifications\alerts.html" />
     <Content Include="AdminPanel\notifications\badge.html" />
     <Content Include="AdminPanel\notifications\modals.html" />
@@ -3384,6 +3386,7 @@
     <Content Include="UserPanel\Assets\fontawesome-free-6.3.0-web\svgs\solid\yen-sign.svg" />
     <Content Include="UserPanel\Assets\fontawesome-free-6.3.0-web\svgs\solid\yin-yang.svg" />
     <Content Include="UserPanel\Assets\fontawesome-free-6.3.0-web\svgs\solid\z.svg" />
+    <Content Include="Images\fastfood.jpg" />
     <Content Include="UserPanel\Assets\Img\fastfood.jpg" />
     <Content Include="UserPanel\Index.aspx" />
     <Content Include="UserPanel\menus.aspx" />
@@ -3404,6 +3407,20 @@
     </Compile>
     <Compile Include="AdminPanel\ListCategory.aspx.designer.cs">
       <DependentUpon>ListCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\ListProducts.aspx.cs">
+      <DependentUpon>ListProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\ListProducts.aspx.designer.cs">
+      <DependentUpon>ListProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\ListPromotionalMenus.aspx.cs">
+      <DependentUpon>ListPromotionalMenus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\ListPromotionalMenus.aspx.designer.cs">
+      <DependentUpon>ListPromotionalMenus.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminPanel\MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>

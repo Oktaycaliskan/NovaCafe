@@ -9,7 +9,7 @@ namespace DataAccessLayer
     public class Promotional_Menus
     {
 
-        public int Id { get; set; }
+        public int ID { get; set; }
 
         public string Name { get; set; }
         public string Photo { get; set; }
