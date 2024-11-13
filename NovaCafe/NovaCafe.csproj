@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminPanel\AddCategory.aspx" />
     <Content Include="AdminPanel\assets\brand\coreui.svg" />
     <Content Include="AdminPanel\assets\favicon\android-icon-144x144.png" />
     <Content Include="AdminPanel\assets\favicon\android-icon-192x192.png" />
@@ -1307,6 +1308,7 @@
     <Content Include="AdminPanel\vendors\chart.js\js\chart.min.js" />
     <Content Include="AdminPanel\vendors\simplebar\css\simplebar.css" />
     <Content Include="AdminPanel\vendors\simplebar\js\simplebar.min.js" />
+    <Content Include="Images\none.png" />
     <Content Include="UserPanel\Assets\bootstrap-5.3.3-dist\css\bootstrap-grid.css" />
     <Content Include="UserPanel\Assets\bootstrap-5.3.3-dist\css\bootstrap-grid.min.css" />
     <Content Include="UserPanel\Assets\bootstrap-5.3.3-dist\css\bootstrap-grid.rtl.css" />
@@ -3394,6 +3396,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminPanel\AddCategory.aspx.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\AddCategory.aspx.designer.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminPanel\DefaultPage.aspx.cs">
       <DependentUpon>DefaultPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
