@@ -413,7 +413,8 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "SELECT P.ID, P.Name, P.Img, P.Category_ID, C.Name, P.Content, P.Price, P.IsActive FROM Products AS P JOIN Categorys AS C ON P.Category_ID = C.ID WHERE P.ID=@id";
+                cmd.CommandText = "SELECT P.ID, P.Name, P.Img, P.Category_ID, C.Name AS CategoryName, P.Content, P.Price, P.IsActive FROM Products AS P JOIN Categorys AS C ON P.Category_ID = C.ID WHERE P.Category_ID = @id;";
+                //cmd.CommandText = "SELECT P.ID, P.Name, P.Img, P.Category_ID, C.Name, P.Content, P.Price, P.IsActive FROM Products AS P JOIN Categorys AS C ON P.Category_ID = C.ID WHERE P.ID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
