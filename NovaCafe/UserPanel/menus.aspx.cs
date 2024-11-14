@@ -18,7 +18,7 @@ namespace NovaCafe.UserPanel
             if (Request.QueryString.Count != 0)
             {
                 int id = Convert.ToInt32(Request.QueryString["mid"]);
-                Products p = dm.GetProduct(id);
+                Products p = dm.GetProductCid(id);
                 ltrl_ID.Text = p.ID.ToString();
                 ltrl_KahvaltiName.Text = p.Name;
                 ltrl_price.Text=p.Price.ToString();

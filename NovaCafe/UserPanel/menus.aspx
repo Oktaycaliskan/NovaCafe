@@ -19,8 +19,8 @@
                             ₺</h6>
 
 
-                         <asp:Literal ID="ltrl_ID" runat="server"></asp:Literal>
-                        <%--<button class="btn btn-primary btn-sm">İncele</button>--%>
+                        <%-- <asp:Literal ID="ltrl_ID" runat="server"></asp:Literal>--%>
+                        <a href="menusRead.aspx?pid=<asp:Literal ID="ltrl_ID" runat="server"></asp:Literal>" class="btn btn-primary btn-sm">İncele</a>
 
                     </div>
                 </div>
