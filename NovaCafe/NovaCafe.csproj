@@ -3390,6 +3390,7 @@
     <Content Include="UserPanel\Assets\fontawesome-free-6.3.0-web\svgs\solid\z.svg" />
     <Content Include="Images\fastfood.jpg" />
     <Content Include="UserPanel\Assets\Img\fastfood.jpg" />
+    <Content Include="UserPanel\campaignMenus.aspx" />
     <Content Include="UserPanel\Index.aspx" />
     <Content Include="UserPanel\menus.aspx" />
     <Content Include="UserPanel\menusRead.aspx" />
@@ -3439,6 +3440,13 @@
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserPanel\campaignMenus.aspx.cs">
+      <DependentUpon>campaignMenus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPanel\campaignMenus.aspx.designer.cs">
+      <DependentUpon>campaignMenus.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserPanel\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

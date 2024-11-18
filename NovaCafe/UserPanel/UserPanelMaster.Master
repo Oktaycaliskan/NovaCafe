@@ -27,14 +27,14 @@
             <div class="container-fluid p-0 m-0">
                 <div class="navbar-collapse p-0 m-0" id="navbarNav" style="background-color: #C9B070">
                     <ul class="navbar-nav flex-row">
-                        <li class="nav-item px-5 mt-3 ">
+                        <li class="nav-item px-5 mt-1 ">
                             <a class="nav-link text-white fw-bold" aria-current="page" href="Index.aspx">Anasayfa</a>
                         </li>
-                        <li class="nav-item px-5 mt-3 ">
+                        <li class="nav-item px-5 mt-1 ">
                             <a class="nav-link text-white fw-bold" href="#">LOGO </a>
                         </li>
-                        <li class="nav-item px-5">
-                            <a class="nav-link text-white fw-bold" href="#">Kampanyalı Menüler</a>
+                        <li class="nav-item px-5 mt-1">
+                            <a class="nav-link text-white fw-bold" href="#">Kampanyalar</a>
                         </li>
                         <%-- <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>

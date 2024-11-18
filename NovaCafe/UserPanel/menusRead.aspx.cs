@@ -20,7 +20,7 @@ namespace NovaCafe.UserPanel
                 ltrl_breakfastName.Text = p.Name;
                 ltrl_content.Text = p.Content;
                 ltrl_breakfastPrice.Text = p.Price.ToString();
-                ltrl_img.Text = "<ing src='../Images/" + p.Photo + "'/>";
+                ltrl_img.Text = "<img class=\"text-center w-100\"  src='../Images/" + p.Photo + "'/>";
 
             }
 
