@@ -15,39 +15,12 @@ namespace NovaCafe.UserPanel
     {
 
         /// <summary>
-        /// ltrl_img control.
+        /// rptProducts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrl_img;
-
-        /// <summary>
-        /// ltrl_KahvaltiName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrl_KahvaltiName;
-
-        /// <summary>
-        /// ltrl_price control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrl_price;
-
-        /// <summary>
-        /// ltrl_ID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrl_ID;
+        protected global::System.Web.UI.WebControls.Repeater rptProducts;
     }
 }

@@ -10,3 +10,9 @@ C:\Users\rampa\OneDrive\Belgeler\GitHub\NovaCafe\DataAccessLayer\obj\Debug\DataA
 C:\Users\rampa\OneDrive\Belgeler\GitHub\NovaCafe\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\rampa\OneDrive\Belgeler\GitHub\NovaCafe\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\rampa\OneDrive\Belgeler\GitHub\NovaCafe\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\rampa\OneDrive\Masaüstü\NovaCafe-main\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\rampa\OneDrive\Masaüstü\NovaCafe-main\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\rampa\OneDrive\Masaüstü\NovaCafe-main\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\rampa\OneDrive\Masaüstü\NovaCafe-main\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\rampa\OneDrive\Masaüstü\NovaCafe-main\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\rampa\OneDrive\Masaüstü\NovaCafe-main\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

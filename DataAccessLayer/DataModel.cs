@@ -409,20 +409,21 @@ namespace DataAccessLayer
             }
             finally { con.Close(); }
         }
-        public Products GetProductCid(int cid)
+        public List<Products> GetProductCid(int cid)
         {
+            List<Products> productList = new List<Products>(); //
             try
             {
                 cmd.CommandText = "SELECT P.ID, P.Name, P.Img, P.Category_ID, C.Name AS CategoryName, P.Content, P.Price, P.IsActive FROM Products AS P JOIN Categorys AS C ON P.Category_ID = C.ID WHERE P.Category_ID = @cid;";
-             
+
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@cid", cid);
                 con.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
-                Products p = new Products();
+
                 while (reader.Read())
                 {
-                    
+                    Products p = new Products(); // Yeni ürün nesnesi oluştur
                     p.ID = reader.GetInt32(0);
                     p.Name = reader.GetString(1);
                     p.Photo = reader.GetString(2);
@@ -432,17 +433,19 @@ namespace DataAccessLayer
                     p.Price = reader.GetDecimal(6);
                     p.IsActive = reader.GetBoolean(7);
                     p.IsActiveStr = reader.GetBoolean(7) ? "<label style='color:green'>Aktif</label>" : "<label style='color:gray'>Pasif</label>";
-               
 
+                    productList.Add(p);
                 }
-                return p;
+                return productList;
             }
             catch
             {
-
                 return null;
             }
-            finally { con.Close(); }
+            finally
+            {
+                con.Close();
+            }
         }
         public Products GetProduct(int id)
         {

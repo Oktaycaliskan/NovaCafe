@@ -14,21 +14,27 @@ namespace NovaCafe.UserPanel
         DataModel dm = new DataModel();
         protected void Page_Load(object sender, EventArgs e)
         {
-         
-            if (Request.QueryString.Count != 0)
+            if (!IsPostBack)
             {
-                int id = Convert.ToInt32(Request.QueryString["mid"]);
-                Products p = dm.GetProductCid(id);
-                ltrl_ID.Text = p.ID.ToString();
-                ltrl_KahvaltiName.Text = p.Name;
-                ltrl_price.Text=p.Price.ToString();
-                ltrl_img.Text = "<img src='../Images/" + p.Photo + "'/>";
+                if (Request.QueryString.Count != 0)
+                {
+                    int id = Convert.ToInt32(Request.QueryString["mid"]);
+                    List<Products> productsList = dm.GetProductCid(id);
 
-
+                    if (productsList != null && productsList.Count > 0)
+                    {
+                        rptProducts.DataSource = productsList; 
+                        rptProducts.DataBind();                 
+                    }
+                    else
+                    {
+                        rptProducts.Visible = false; 
+                    }
+                }
             }
         }
 
 
-        
+
     }
 }

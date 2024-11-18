@@ -28,7 +28,7 @@
                 <div class="navbar-collapse p-0 m-0" id="navbarNav" style="background-color: #C9B070">
                     <ul class="navbar-nav flex-row">
                         <li class="nav-item px-5 mt-3 ">
-                            <a class="nav-link text-white fw-bold" aria-current="page" href="#">Anasayfa</a>
+                            <a class="nav-link text-white fw-bold" aria-current="page" href="Index.aspx">Anasayfa</a>
                         </li>
                         <li class="nav-item px-5 mt-3 ">
                             <a class="nav-link text-white fw-bold" href="#">LOGO </a>

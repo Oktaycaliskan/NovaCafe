@@ -18,7 +18,9 @@ namespace NovaCafe.UserPanel
                 int id = Convert.ToInt32(Request.QueryString["pid"]);
                 Products p = dm.GetProduct(id);
                 ltrl_breakfastName.Text = p.Name;
+                ltrl_content.Text = p.Content;
                 ltrl_breakfastPrice.Text = p.Price.ToString();
+                ltrl_img.Text = "<ing src='../Images/" + p.Photo + "'/>";
 
             }
 
