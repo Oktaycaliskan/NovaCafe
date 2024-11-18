@@ -34,7 +34,7 @@
                             <a class="nav-link text-white fw-bold" href="#">LOGO </a>
                         </li>
                         <li class="nav-item px-5 mt-1">
-                            <a class="nav-link text-white fw-bold" href="#">Kampanyalar</a>
+                            <a class="nav-link text-white fw-bold" href="campaignMenus.aspx">Kampanyalar</a>
                         </li>
                         <%-- <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>

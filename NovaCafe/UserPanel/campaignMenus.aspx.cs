@@ -13,7 +13,8 @@ namespace NovaCafe.UserPanel
         DataModel dm = new DataModel();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            campaignMenusrpt.DataSource = dm.ListActivePromotional_Menus();
+            campaignMenusrpt.DataBind();
 
         }
     }
