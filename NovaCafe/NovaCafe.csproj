@@ -3392,6 +3392,7 @@
     <Content Include="UserPanel\Assets\Img\fastfood.jpg" />
     <Content Include="UserPanel\campaignMenus.aspx" />
     <Content Include="UserPanel\campaignMenusRead.aspx" />
+    <Content Include="UserPanel\Contact.aspx" />
     <Content Include="UserPanel\Index.aspx" />
     <Content Include="UserPanel\menus.aspx" />
     <Content Include="UserPanel\menusRead.aspx" />
@@ -3454,6 +3455,13 @@
     </Compile>
     <Compile Include="UserPanel\campaignMenusRead.aspx.designer.cs">
       <DependentUpon>campaignMenusRead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPanel\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPanel\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPanel\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

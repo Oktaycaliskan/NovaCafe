@@ -12,7 +12,7 @@
                     <div class="col-6 col-sm-5 p-1 m-0">
                         <div class="card text-bg-dark">
                             <a href="campaignMenusRead.aspx?pmid=<%# Eval("ID") %>" style="z-index: 10" />
-                            <img src="../Images/<%# Eval("Photo") %>" class="card-img w-100" />
+                            <img src="../Images/<%# Eval("Photo") %>" class="card-img w-100" alt="Ürün Resim"/>
                             </a>
                             <div class="<%--card-img-overlay--%>" style="z-index: 11">
                                 <h1 class="card-title text-center"><%# Eval("Name") %></h1>

@@ -10,6 +10,9 @@
     <link href="Assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="Assets/fontawesome-free-6.3.0-web/css/all.min.css" rel="stylesheet" />
     <link href="Assets/Css.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
 
 </head>
 <style>
@@ -25,7 +28,7 @@
     <form id="form1" class="p-0 m-0" runat="server">
         <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 m-0">
             <div class="container-fluid p-0 m-0">
-                <div class="navbar-collapse p-0 m-0" id="navbarNav" style="background-color: #C9B070">
+                <div class="navbar-collapse p-0 m-0" id="navbarNav" style="background-color: #C9B070; border-bottom: 2px solid black">
                     <ul class="navbar-nav flex-row">
                         <li class="nav-item px-5 mt-1 ">
                             <a class="nav-link text-white fw-bold" aria-current="page" href="Index.aspx">Anasayfa</a>
@@ -60,12 +63,12 @@
                                 </div>
                                 <div class="col-md-2 mb-1">
                                     <h6 class="text-uppercase font-weight-bold">
-                                        <a href="#!" class="text-white text-decoration-none">Anasayfa</a>
+                                        <a href="Index.aspx" class="text-white text-decoration-none">Anasayfa</a>
                                     </h6>
                                 </div>
                                 <div class="col-md-2 mb-1">
                                     <h6 class="text-uppercase font-weight-bold">
-                                        <a href="#!" class="text-white text-decoration-none">Menüler</a>
+                                        <a href="Index.aspx" class="text-white text-decoration-none">Menüler</a>
                                     </h6>
                                 </div>
                                 <div class="col-md-2 mb-1">
