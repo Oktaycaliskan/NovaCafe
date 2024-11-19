@@ -34,6 +34,7 @@ namespace NovaCafe.UserPanel
                     {
                         rptProducts.Visible = false;
                     }
+                }
             }
         }
 
