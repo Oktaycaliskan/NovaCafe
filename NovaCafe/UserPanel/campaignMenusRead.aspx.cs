@@ -15,16 +15,24 @@ namespace NovaCafe.UserPanel
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if (Request.QueryString.Count != 0)
+            if (!IsPostBack && Request.QueryString.Count != 0)
             {
                 int id = Convert.ToInt32(Request.QueryString["pmid"]);
                 Promotional_Menus pm = dm.GetPromotional_Menus(id);
-                ltrl_ProductName.Text = pm.Name;
-                ltrl_price.Text = pm.Price.ToString();
-                ltrl_content.Text = pm.Content;
-                ltrl_imgpm.Text = "<img class=\"text-center w-100\"  src='../Images/" + pm.Photo + "'/>";
+                if (pm.IsActive)
+                {
 
+                    ltrl_ProductName.Text = pm.Name;
+                    ltrl_price.Text = pm.Price.ToString();
+                    ltrl_content.Text = pm.Content;
+                    ltrl_imgpm.Text = "<img class=\"text-center w-100\"  src='../Images/" + pm.Photo + "'/>";
+                }
+                else
+                {
+                    Response.Redirect("campaignMenus.aspx");
+                }
             }
+
 
 
 

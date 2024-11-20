@@ -10,17 +10,27 @@ namespace NovaCafe.UserPanel
 {
     public partial class menusRead : System.Web.UI.Page
     {
-        DataModel dm =new DataModel();
+        DataModel dm = new DataModel();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Request.QueryString.Count != 0)
+
+
+            if (!IsPostBack && Request.QueryString.Count != 0)
             {
                 int id = Convert.ToInt32(Request.QueryString["pid"]);
                 Products p = dm.GetProduct(id);
-                ltrl_breakfastName.Text = p.Name;
-                ltrl_content.Text = p.Content;
-                ltrl_breakfastPrice.Text = p.Price.ToString();
-                ltrl_img.Text = "<img class=\"text-center w-100\"  src='../Images/" + p.Photo + "'/>";
+                if (p.IsActive)
+                {
+                    ltrl_breakfastName.Text = p.Name;
+                    ltrl_content.Text = p.Content;
+                    ltrl_breakfastPrice.Text = p.Price.ToString();
+                    ltrl_img.Text = "<img class=\"text-center w-100\"  src='../Images/" + p.Photo + "'/>";
+                }
+                else
+                {
+                    Response.Redirect("Index.aspx");
+                }
+               
 
             }
 
