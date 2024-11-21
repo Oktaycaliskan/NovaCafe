@@ -49,7 +49,7 @@
                         Ürünler</a>
                         <ul class="nav-group-items">
                             <li class="nav-item"><a class="nav-link" href="ListProducts.aspx"><span class="nav-icon"></span>Listele</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"><span class="nav-icon"></span>Ekle</a></li>
+                            <li class="nav-item"><a class="nav-link" href="AddProducts.aspx"><span class="nav-icon"></span>Ekle</a></li>
                         </ul>
                     </li>
                     <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
@@ -69,7 +69,7 @@
                         Kampanyalı Menüler</a>
                         <ul class="nav-group-items">
                             <li class="nav-item"><a class="nav-link" href="ListPromotionalMenus.aspx"><span class="nav-icon"></span>Listele</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"><span class="nav-icon"></span>Ekle</a></li>
+                            <li class="nav-item"><a class="nav-link" href="AddPromotionalMenu.aspx"><span class="nav-icon"></span>Ekle</a></li>
                         </ul>
                     </li>
             </div>

@@ -68,6 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminPanel\AddCategory.aspx" />
+    <Content Include="AdminPanel\AddProducts.aspx" />
+    <Content Include="AdminPanel\AddPromotionalMenu.aspx" />
     <Content Include="AdminPanel\assets\brand\coreui.svg" />
     <Content Include="AdminPanel\assets\favicon\android-icon-144x144.png" />
     <Content Include="AdminPanel\assets\favicon\android-icon-192x192.png" />
@@ -3405,6 +3407,20 @@
     </Compile>
     <Compile Include="AdminPanel\AddCategory.aspx.designer.cs">
       <DependentUpon>AddCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\AddProducts.aspx.cs">
+      <DependentUpon>AddProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\AddProducts.aspx.designer.cs">
+      <DependentUpon>AddProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\AddPromotionalMenu.aspx.cs">
+      <DependentUpon>AddPromotionalMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\AddPromotionalMenu.aspx.designer.cs">
+      <DependentUpon>AddPromotionalMenu.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminPanel\DefaultPage.aspx.cs">
       <DependentUpon>DefaultPage.aspx</DependentUpon>

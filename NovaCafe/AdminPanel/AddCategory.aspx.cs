@@ -31,7 +31,7 @@ namespace NovaCafe.AdminPanel
                     if (fu_img.HasFile)
                     {
                         FileInfo fi = new FileInfo(fu_img.FileName);
-                        if (fi.Extension == ".jpg" || fi.Extension == ".png")
+                        if (fi.Extension == ".jpg" || fi.Extension == ".png"||fi.Extension==".jpeg")
                         {
                             string ImgExtension=fi.Extension;
                             string ImgName=Guid.NewGuid().ToString();

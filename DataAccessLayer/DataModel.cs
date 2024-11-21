@@ -305,7 +305,28 @@ namespace DataAccessLayer
             finally { con.Close(); }
         }
 
+        public bool AddPromotional_Menus(Promotional_Menus pm)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO Promotional_Menus(Name,Img,Content,Price,IsActive) Values(@name, @img, @content, @price, @isactive)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@name", pm.Name);
+                cmd.Parameters.AddWithValue("@img", pm.Photo);
+                cmd.Parameters.AddWithValue("@content", pm.Content);
+                cmd.Parameters.AddWithValue("@price", pm.Price);
+                cmd.Parameters.AddWithValue("@isactive", pm.IsActive);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch 
+            {
 
+               return false;
+            }
+            finally { con.Close(); }
+        }
         #endregion
 
         #region Product Method
@@ -513,6 +534,30 @@ namespace DataAccessLayer
                 return true;
             }
             catch
+            {
+
+                return false;
+            }
+            finally { con.Close(); }
+        }
+        public bool AddProduct(Products p)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO Products(Name,Img,Category_ID, Content,Price,IsActive) VALUES(@name, @img, @cid, @content, @price, @isactive)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@name", p.Name);
+                cmd.Parameters.AddWithValue("@img", p.Photo);
+                cmd.Parameters.AddWithValue("@cid", p.Category_ID);
+                cmd.Parameters.AddWithValue("@content", p.Content);
+                cmd.Parameters.AddWithValue("@price", p.Price);
+                cmd.Parameters.AddWithValue("@isactive", p.IsActive);
+                con.Open();
+                cmd.ExecuteNonQuery();
+
+                return true;
+            }
+            catch 
             {
 
                 return false;

@@ -8,10 +8,10 @@
             <h3>Kategori Ekle</h3>
         </div>
         <div class="formContent" style="padding: 20px">
-            <asp:Panel ID="pnl_success" runat="server" Visible="false">
+            <asp:Panel ID="pnl_success" runat="server" Visible="false" CssClass="success">
                 Kategori Ekleme Başarılı
             </asp:Panel>
-            <asp:Panel ID="pnl_unsuccess" runat="server" Visible="false">
+            <asp:Panel ID="pnl_unsuccess" runat="server" Visible="false" CssClass="unsuccess">
                 <asp:Label ID="lbl_unsuccess" runat="server"></asp:Label>
             </asp:Panel>
             <div style="float: left; width: 50%">
@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div style="clear: both"></div>
-            <asp:LinkButton ID="lbtn_addCategory" runat="server" Text="Ekle" CssClass="btn btn-success" OnClick="lbtn_addCategory_Click"></asp:LinkButton>
+            <asp:LinkButton ID="lbtn_addCategory" runat="server" Text="Ekle" CssClass="btn btn-success mt-4" OnClick="lbtn_addCategory_Click"></asp:LinkButton>
         </div>
       
     </div>
