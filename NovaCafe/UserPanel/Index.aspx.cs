@@ -13,7 +13,7 @@ namespace NovaCafe.UserPanel
         DataModel dm =new DataModel();
         protected void Page_Load(object sender, EventArgs e)
         {
-            Category.DataSource = dm.ListCategories();
+            Category.DataSource = dm.ListActiveCategories();
             Category.DataBind();
         }
     }

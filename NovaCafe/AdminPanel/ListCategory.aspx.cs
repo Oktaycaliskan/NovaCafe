@@ -11,19 +11,18 @@ namespace NovaCafe.AdminPanel
     public partial class ListCategory : System.Web.UI.Page
     {
 
-        DataModel dm=new DataModel();
+        DataModel dm = new DataModel();
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            DataLoad();
+                DataLoad();
         }
 
-     
+
 
         protected void lv_categories_ItemCommand(object sender, ListViewCommandEventArgs e)
         {
-            int id=Convert.ToInt32(e.CommandArgument);
-            if (e.CommandName== "changeStatus")
+            int id = Convert.ToInt32(e.CommandArgument);
+            if (e.CommandName == "changeStatus")
             {
                 Categories c = dm.GetCategory(id);
                 if (c.IsActive)
