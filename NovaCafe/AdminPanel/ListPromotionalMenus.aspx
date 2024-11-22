@@ -30,7 +30,7 @@
                 <td><%# Eval("Price") %></td>
                 <td><%# Eval("IsActiveStr") %></td>
                 <td>
-                    <a href="#" class="btn btn-primary">Düzenle</a>
+                    <a href='EditPromotionalMenus.aspx?pmid=<%# Eval("ID") %>' class="btn btn-primary">Düzenle</a>
                     <asp:LinkButton CssClass="btn btn-danger" ID="lbtn_changeStatus" runat="server" CommandArgument='<%# Eval("ID") %>' CommandName="changeStatus">Durum Değiştir</asp:LinkButton>
                 </td>
             </tr>

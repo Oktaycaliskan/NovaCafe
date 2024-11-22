@@ -56,7 +56,7 @@ namespace NovaCafe.AdminPanel
                     {
                         pnl_success.Visible = true;
                         pnl_unsuccess.Visible = false;
-                        tb_content.Text = tb_name.Text = "";
+                        tb_content.Text = tb_name.Text = img_photo.ImageUrl = "";
                         cb_isactive.Checked = false;
                     }
                 }
@@ -71,7 +71,7 @@ namespace NovaCafe.AdminPanel
             {
                 pnl_success.Visible = true;
                 pnl_unsuccess.Visible = false;
-                tb_content.Text = tb_name.Text = "";
+                tb_content.Text = tb_name.Text = img_photo.ImageUrl = "";
                 cb_isactive.Checked = false;
             }
             else

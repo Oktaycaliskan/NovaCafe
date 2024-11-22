@@ -164,7 +164,7 @@ namespace DataAccessLayer
                 cmd.ExecuteNonQuery();
                 return true;
             }
-            catch 
+            catch
             {
 
                 return false;
@@ -177,17 +177,17 @@ namespace DataAccessLayer
             {
                 cmd.CommandText = "UPDATE Categorys SET Name=@name, Img=@img, Content=@content, IsActive=@isactive WHERE ID=@id";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@id",c.ID);
-                cmd.Parameters.AddWithValue("@name",c.Name);
-                cmd.Parameters.AddWithValue("@img",c.Photo);
-                cmd.Parameters.AddWithValue("@content",c.Content);
-                cmd.Parameters.AddWithValue("@isactive",c.IsActive);
+                cmd.Parameters.AddWithValue("@id", c.ID);
+                cmd.Parameters.AddWithValue("@name", c.Name);
+                cmd.Parameters.AddWithValue("@img", c.Photo);
+                cmd.Parameters.AddWithValue("@content", c.Content);
+                cmd.Parameters.AddWithValue("@isactive", c.IsActive);
                 con.Open();
                 cmd.ExecuteNonQuery();
 
                 return true;
             }
-            catch 
+            catch
             {
 
                 return false;
@@ -343,10 +343,34 @@ namespace DataAccessLayer
                 cmd.ExecuteNonQuery();
                 return true;
             }
-            catch 
+            catch
             {
 
-               return false;
+                return false;
+            }
+            finally { con.Close(); }
+        }
+        public bool EditPromotional_Menu(Promotional_Menus pm)
+        {
+            try
+            {
+                cmd.CommandText = "UPDATE Promotional_Menus SET Name=@name, Img=@img, Content=@content, Price=@price, IsActive=@isactive WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", pm.ID);
+                cmd.Parameters.AddWithValue("@name", pm.Name);
+                cmd.Parameters.AddWithValue("@img", pm.Photo);
+                cmd.Parameters.AddWithValue("@content", pm.Content);
+                cmd.Parameters.AddWithValue("@price", pm.Price);
+                cmd.Parameters.AddWithValue("@isactive", pm.IsActive);
+                con.Open();
+                cmd.ExecuteNonQuery();
+
+                return true;
+            }
+            catch
+            {
+
+                return false;
             }
             finally { con.Close(); }
         }
@@ -580,7 +604,7 @@ namespace DataAccessLayer
 
                 return true;
             }
-            catch 
+            catch
             {
 
                 return false;
@@ -607,7 +631,7 @@ namespace DataAccessLayer
             return control;
         }
 
-        public bool DataControl(string table,  string data)
+        public bool DataControl(string table, string data)
         {
             try
             {
@@ -615,8 +639,8 @@ namespace DataAccessLayer
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@name", data);
                 con.Open();
-                int count=Convert.ToInt32(cmd.ExecuteScalar());
-                if (count==0)
+                int count = Convert.ToInt32(cmd.ExecuteScalar());
+                if (count == 0)
                 {
                     return true;
                 }

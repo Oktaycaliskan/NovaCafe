@@ -20,7 +20,7 @@
                     <asp:TextBox CssClass="textbar" ID="tb_name" runat="server"></asp:TextBox>
                 </div>
                 <div class="textbox">
-                    <asp:Image ID="img_photo" runat="server" /><br />
+                    <asp:Image ID="img_photo" runat="server" Width="300px"/><br />
                     <label>Resim</label><br />
                     <asp:FileUpload ID="fu_img" runat="server" />
                 </div>
