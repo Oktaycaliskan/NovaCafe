@@ -171,6 +171,29 @@ namespace DataAccessLayer
             }
             finally { con.Close(); }
         }
+        public bool EditCategory(Categories c)
+        {
+            try
+            {
+                cmd.CommandText = "UPDATE Categorys SET Name=@name, Img=@img, Content=@content, IsActive=@isactive WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id",c.ID);
+                cmd.Parameters.AddWithValue("@name",c.Name);
+                cmd.Parameters.AddWithValue("@img",c.Photo);
+                cmd.Parameters.AddWithValue("@content",c.Content);
+                cmd.Parameters.AddWithValue("@isactive",c.IsActive);
+                con.Open();
+                cmd.ExecuteNonQuery();
+
+                return true;
+            }
+            catch 
+            {
+
+                return false;
+            }
+            finally { con.Close(); }
+        }
         #endregion
 
         #region Promotional Menu Methods
