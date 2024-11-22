@@ -611,7 +611,30 @@ namespace DataAccessLayer
             }
             finally { con.Close(); }
         }
+        public bool EditProduct(Products p)
+        {
+            try
+            {
+                cmd.CommandText = "UPDATE Products SET Name=@name, Img=@img,Category_ID=@cid, Content=@content, Price=@price, IsActive=@isactive WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", p.ID);
+                cmd.Parameters.AddWithValue("@name", p.Name);
+                cmd.Parameters.AddWithValue("@img", p.Photo);
+                cmd.Parameters.AddWithValue("@cid", p.Category_ID);
+                cmd.Parameters.AddWithValue("@content", p.Content);
+                cmd.Parameters.AddWithValue("@price", p.Price);
+                cmd.Parameters.AddWithValue("@isactive", p.IsActive);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch 
+            {
 
+                return false;
+            }
+            finally { con.Close(); }
+        }
         #endregion
 
 

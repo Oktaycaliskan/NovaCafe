@@ -1072,6 +1072,7 @@
     <Content Include="AdminPanel\css\vendors\simplebar.css" />
     <Content Include="AdminPanel\DefaultPage.aspx" />
     <Content Include="AdminPanel\EditCategory.aspx" />
+    <Content Include="AdminPanel\EditProducts.aspx" />
     <Content Include="AdminPanel\EditPromotionalMenus.aspx" />
     <Content Include="AdminPanel\forms\checks-radios.html" />
     <Content Include="AdminPanel\forms\floating-labels.html" />
@@ -3437,6 +3438,13 @@
     </Compile>
     <Compile Include="AdminPanel\EditCategory.aspx.designer.cs">
       <DependentUpon>EditCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\EditProducts.aspx.cs">
+      <DependentUpon>EditProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\EditProducts.aspx.designer.cs">
+      <DependentUpon>EditProducts.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminPanel\EditPromotionalMenus.aspx.cs">
       <DependentUpon>EditPromotionalMenus.aspx</DependentUpon>
