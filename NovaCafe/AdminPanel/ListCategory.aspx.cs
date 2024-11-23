@@ -15,7 +15,7 @@ namespace NovaCafe.AdminPanel
         protected void Page_Load(object sender, EventArgs e)
         {
 
-                DataLoad();
+            DataLoad();
         }
 
 
@@ -23,6 +23,8 @@ namespace NovaCafe.AdminPanel
         protected void lv_categories_ItemCommand(object sender, ListViewCommandEventArgs e)
         {
             int id = Convert.ToInt32(e.CommandArgument);
+
+
             if (e.CommandName == "changeStatus")
             {
                 Categories c = dm.GetCategory(id);
@@ -36,6 +38,7 @@ namespace NovaCafe.AdminPanel
                 }
 
             }
+
             DataLoad();
         }
 
