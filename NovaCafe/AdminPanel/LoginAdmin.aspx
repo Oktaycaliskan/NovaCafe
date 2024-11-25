@@ -37,9 +37,8 @@
                                     <input type="password" id="typePasswordX" class="form-control form-control-lg" />
                                 </div>
 
-                                <p class="small mb-1 pb-lg-2"><a class="text-white-50" href="#!">Şifre mi Unuttum ?</a></p>
 
-                                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+                                <button class="btn btn-outline-light btn-lg px-5" type="submit">Giriş Yap</button>
                             </div>
 
                         </div>
