@@ -12,12 +12,17 @@ namespace DataAccessLayer
     public class DataModel
     {
         SqlConnection con; SqlCommand cmd;
+        Admin admin=new Admin();
 
         public DataModel()
         {
             con = new SqlConnection(ConnectionStrings.ConStr);
             cmd = con.CreateCommand();
+            admin.AdminName = "Kadoil";
+            admin.AdminPassword = "Kado1234";
         }
+
+
 
         #region Category Methods
 
@@ -628,7 +633,7 @@ namespace DataAccessLayer
                 cmd.ExecuteNonQuery();
                 return true;
             }
-            catch 
+            catch
             {
 
                 return false;
@@ -674,7 +679,23 @@ namespace DataAccessLayer
             }
             finally { con.Close(); }
         }
+        public bool AdminControl(string adminName, string adminPassword)
+        {
+            if (adminName == admin.AdminName || adminPassword == admin.AdminPassword)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
 
+
+        }
+        public Admin GetAdmin()
+        {
+            return admin;
+        }
         #endregion
     }
 }

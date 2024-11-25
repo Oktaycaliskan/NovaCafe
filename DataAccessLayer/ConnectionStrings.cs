@@ -10,4 +10,9 @@ namespace DataAccessLayer
     {
         public static string ConStr = @"Data Source=.\SQLEXPRESS; Initial Catalog=NovaCafe_DB;Integrated Security=True";
     }
+    public class Admin
+    {
+        public string AdminName { get; set; }
+        public string AdminPassword { get; set; }
+    }
 }
