@@ -68,7 +68,7 @@
                                 </div>
                                 <div class="col-md-2 mb-1">
                                     <h6 class="text-uppercase font-weight-bold">
-                                        <a href="Index.aspx" class="text-white text-decoration-none">Menüler</a>
+                                        <a href="campaignMenus.aspx" class="text-white text-decoration-none">Menüler</a>
                                     </h6>
                                 </div>
                                 <div class="col-md-2 mb-1">
