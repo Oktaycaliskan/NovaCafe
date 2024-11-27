@@ -73,7 +73,7 @@
                                 </div>
                                 <div class="col-md-2 mb-1">
                                     <h6 class="text-uppercase font-weight-bold">
-                                        <a href="#!" class="text-white text-decoration-none">İletişim</a>
+                                        <a href="Contact.aspx" class="text-white text-decoration-none">İletişim</a>
                                     </h6>
                                 </div>
                             </div>
@@ -117,7 +117,7 @@
                         class="text-center p-3"
                         style="background-color: rgba(0, 0, 0, 0.2)">
                         © 2024 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">2024 hacı oktay</a>
+      <a class="text-white" href="https://mdbootstrap.com/">2024 Hacı Oktay</a>
                     </div>
                 </footer>
             </div>
