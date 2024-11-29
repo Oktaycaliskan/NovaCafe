@@ -8,7 +8,9 @@ namespace DataAccessLayer
 {
     public class ConnectionStrings
     {
-        public static string ConStr = @"Data Source=.\SQLEXPRESS; Initial Catalog=NovaCafe_DB;Integrated Security=True";
+        //public static string ConStr = @"Data Source=.\SQLEXPRESS; Initial Catalog=NovaCafe_DB;Integrated Security=True";
+
+        public static string ConStr = @"Data Source=mssql02.trwww.com;Network Library=DBMSSOCN;Initial Catalog=novacaf5_1650;User ID=NovaCafe;Password=Tqs$l8047";
     }
     public class Admin
     {

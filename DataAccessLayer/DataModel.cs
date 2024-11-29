@@ -31,7 +31,7 @@ namespace DataAccessLayer
             List<Categories> category = new List<Categories>();
             try
             {
-                cmd.CommandText = "SELECT * FROM Categorys";
+                cmd.CommandText = "SELECT * FROM NovaCafe.Categorys";
                 cmd.Parameters.Clear();
                 con.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -61,7 +61,7 @@ namespace DataAccessLayer
             List<Categories> category = new List<Categories>();
             try
             {
-                cmd.CommandText = "SELECT * FROM Categorys WHERE IsActive=1";
+                cmd.CommandText = "SELECT * FROM NovaCafe.Categorys WHERE IsActive=1";
                 cmd.Parameters.Clear();
                 con.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -91,7 +91,7 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "SELECT * FROM Categorys WHERE ID=@id";
+                cmd.CommandText = "SELECT * FROM NovaCafe.Categorys WHERE ID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
@@ -121,7 +121,7 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "UPDATE CATEGORYS SET IsActive=0 WHERE ID=@id";
+                cmd.CommandText = "UPDATE NovaCafe.CATEGORYS SET IsActive=0 WHERE ID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
@@ -140,7 +140,7 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "UPDATE CATEGORYS SET IsActive=1 WHERE ID=@id";
+                cmd.CommandText = "UPDATE NovaCafe.CATEGORYS SET IsActive=1 WHERE ID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
@@ -159,7 +159,7 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "INSERT INTO Categorys(Name, Img, Content, IsActive) Values(@name, @img, @content, @isactive)";
+                cmd.CommandText = "INSERT INTO NovaCafe.Categorys(Name, Img, Content, IsActive) Values(@name, @img, @content, @isactive)";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@name", c.Name);
                 cmd.Parameters.AddWithValue("@img", c.Photo);
@@ -180,7 +180,7 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "UPDATE Categorys SET Name=@name, Img=@img, Content=@content, IsActive=@isactive WHERE ID=@id";
+                cmd.CommandText = "UPDATE NovaCafe.Categorys SET Name=@name, Img=@img, Content=@content, IsActive=@isactive WHERE ID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", c.ID);
                 cmd.Parameters.AddWithValue("@name", c.Name);
@@ -208,7 +208,7 @@ namespace DataAccessLayer
             List<Promotional_Menus> menu = new List<Promotional_Menus>();
             try
             {
-                cmd.CommandText = "SELECT * FROM Promotional_Menus";
+                cmd.CommandText = "SELECT * FROM NovaCafe.Promotional_Menus";
                 cmd.Parameters.Clear();
                 con.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -239,7 +239,7 @@ namespace DataAccessLayer
             List<Promotional_Menus> menu = new List<Promotional_Menus>();
             try
             {
-                cmd.CommandText = "SELECT * FROM Promotional_Menus WHERE IsActive=1";
+                cmd.CommandText = "SELECT * FROM NovaCafe.Promotional_Menus WHERE IsActive=1";
                 cmd.Parameters.Clear();
                 con.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -269,7 +269,7 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "SELECT * FROM Promotional_Menus WHERE ID=@id";
+                cmd.CommandText = "SELECT * FROM NovaCafe.Promotional_Menus WHERE ID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
@@ -300,7 +300,7 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "UPDATE Promotional_Menus SET IsActive=0 WHERE ID=@id";
+                cmd.CommandText = "UPDATE NovaCafe.Promotional_Menus SET IsActive=0 WHERE ID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
@@ -318,7 +318,7 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "UPDATE Promotional_Menus SET IsActive=1 WHERE ID=@id";
+                cmd.CommandText = "UPDATE NovaCafe.Promotional_Menus SET IsActive=1 WHERE ID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
@@ -337,7 +337,7 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "INSERT INTO Promotional_Menus(Name,Img,Content,Price,IsActive) Values(@name, @img, @content, @price, @isactive)";
+                cmd.CommandText = "INSERT INTO NovaCafe.Promotional_Menus(Name,Img,Content,Price,IsActive) Values(@name, @img, @content, @price, @isactive)";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@name", pm.Name);
                 cmd.Parameters.AddWithValue("@img", pm.Photo);
@@ -359,7 +359,7 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "UPDATE Promotional_Menus SET Name=@name, Img=@img, Content=@content, Price=@price, IsActive=@isactive WHERE ID=@id";
+                cmd.CommandText = "UPDATE NovaCafe.Promotional_Menus SET Name=@name, Img=@img, Content=@content, Price=@price, IsActive=@isactive WHERE ID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", pm.ID);
                 cmd.Parameters.AddWithValue("@name", pm.Name);
@@ -387,7 +387,7 @@ namespace DataAccessLayer
             List<Products> products = new List<Products>();
             try
             {
-                cmd.CommandText = "SELECT P.ID, P.Name, P.Img, P.Category_ID, C.Name, P.Content, P.Price, P.IsActive FROM Products AS P JOIN Categorys AS C ON P.Category_ID = C.ID";
+                cmd.CommandText = "SELECT P.ID, P.Name, P.Img, P.Category_ID, C.Name, P.Content, P.Price, P.IsActive FROM NovaCafe.Products AS P JOIN NovaCafe.Categorys AS C ON P.Category_ID = C.ID";
                 cmd.Parameters.Clear();
                 con.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -420,7 +420,7 @@ namespace DataAccessLayer
             List<Products> products = new List<Products>();
             try
             {
-                cmd.CommandText = "SELECT P.ID, P.Name, P.Img, P.Category_ID, C.Name, P.Content, P.Price, P.IsActive FROM Products AS P JOIN Categorys AS C ON P.Category_ID = C.ID WHERE P.IsActive = 1";
+                cmd.CommandText = "SELECT P.ID, P.Name, P.Img, P.Category_ID, C.Name, P.Content, P.Price, P.IsActive FROM NovaCafe.Products AS P JOIN NovaCafe.Categorys AS C ON P.Category_ID = C.ID WHERE P.IsActive = 1";
                 cmd.Parameters.Clear();
                 con.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -453,7 +453,7 @@ namespace DataAccessLayer
             List<Products> products = new List<Products>();
             try
             {
-                cmd.CommandText = "SELECT P.ID, P.Name, P.Img, P.Category_ID, C.Name, P.Content, P.Price, P.IsActive FROM Products AS P JOIN Categorys AS C ON P.Category_ID = C.ID WHERE P.IsActive = 1 AND P.Category_ID=@cid";
+                cmd.CommandText = "SELECT P.ID, P.Name, P.Img, P.Category_ID, C.Name, P.Content, P.Price, P.IsActive FROM NovaCafe.Products AS P JOIN NovaCafe.Categorys AS C ON P.Category_ID = C.ID WHERE P.IsActive = 1 AND P.Category_ID=@cid";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@cid", cid);
                 con.Open();
@@ -487,7 +487,7 @@ namespace DataAccessLayer
             List<Products> productList = new List<Products>(); //
             try
             {
-                cmd.CommandText = "SELECT P.ID, P.Name, P.Img, P.Category_ID, C.Name AS CategoryName, P.Content, P.Price, P.IsActive FROM Products AS P JOIN Categorys AS C ON P.Category_ID = C.ID WHERE P.Category_ID = @cid;";
+                cmd.CommandText = "SELECT P.ID, P.Name, P.Img, P.Category_ID, C.Name AS CategoryName, P.Content, P.Price, P.IsActive FROM NovaCafe.Products AS P JOIN NovaCafe.Categorys AS C ON P.Category_ID = C.ID WHERE P.Category_ID = @cid;";
 
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@cid", cid);
@@ -525,7 +525,7 @@ namespace DataAccessLayer
             try
             {
 
-                cmd.CommandText = "SELECT P.ID, P.Name, P.Img, P.Category_ID, C.Name, P.Content, P.Price, P.IsActive FROM Products AS P JOIN Categorys AS C ON P.Category_ID = C.ID WHERE P.ID=@id";
+                cmd.CommandText = "SELECT P.ID, P.Name, P.Img, P.Category_ID, C.Name, P.Content, P.Price, P.IsActive FROM NovaCafe.Products AS P JOIN NovaCafe.Categorys AS C ON P.Category_ID = C.ID WHERE P.ID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
@@ -560,7 +560,7 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "UPDATE Products SET IsActive=0 WHERE ID=@id";
+                cmd.CommandText = "UPDATE NovaCafe.Products SET IsActive=0 WHERE ID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
@@ -578,7 +578,7 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "UPDATE Products SET IsActive=1 WHERE ID=@id";
+                cmd.CommandText = "UPDATE NovaCafe.Products SET IsActive=1 WHERE ID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
@@ -596,7 +596,7 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "INSERT INTO Products(Name,Img,Category_ID, Content,Price,IsActive) VALUES(@name, @img, @cid, @content, @price, @isactive)";
+                cmd.CommandText = "INSERT INTO NovaCafe.Products(Name,Img,Category_ID, Content,Price,IsActive) VALUES(@name, @img, @cid, @content, @price, @isactive)";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@name", p.Name);
                 cmd.Parameters.AddWithValue("@img", p.Photo);
@@ -620,7 +620,7 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "UPDATE Products SET Name=@name, Img=@img,Category_ID=@cid, Content=@content, Price=@price, IsActive=@isactive WHERE ID=@id";
+                cmd.CommandText = "UPDATE NovaCafe.Products SET Name=@name, Img=@img,Category_ID=@cid, Content=@content, Price=@price, IsActive=@isactive WHERE ID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", p.ID);
                 cmd.Parameters.AddWithValue("@name", p.Name);
