@@ -15,7 +15,7 @@
                                 <img src="../Images/<%# Eval("Photo") %>" class="card-img w-100"/>
                             </a>
                             <div class="<%--card-img-overlay--%>" style="z-index:11">
-                                <h1 class="card-title text-center"><%# Eval("Name") %></h1>
+                                <h1 class="card-title text-center "><%# Eval("Name") %></h1>
                             </div>
                         </div>
                     </div>

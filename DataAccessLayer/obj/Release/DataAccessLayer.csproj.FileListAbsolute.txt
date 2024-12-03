@@ -1,0 +1,6 @@
+C:\Users\Oktay Çalışkan\Documents\GitHub\NovaCafe\DataAccessLayer\bin\Release\DataAccessLayer.dll
+C:\Users\Oktay Çalışkan\Documents\GitHub\NovaCafe\DataAccessLayer\bin\Release\DataAccessLayer.pdb
+C:\Users\Oktay Çalışkan\Documents\GitHub\NovaCafe\DataAccessLayer\obj\Release\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Oktay Çalışkan\Documents\GitHub\NovaCafe\DataAccessLayer\obj\Release\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Oktay Çalışkan\Documents\GitHub\NovaCafe\DataAccessLayer\obj\Release\DataAccessLayer.dll
+C:\Users\Oktay Çalışkan\Documents\GitHub\NovaCafe\DataAccessLayer\obj\Release\DataAccessLayer.pdb
