@@ -11,7 +11,7 @@
           <asp:Literal ID="ltrl_price" runat="server" />
     ₺
 </h6>
-        <h2 class="mt-2 mb-2"><a class="link-primary text-decoration-none" href="Index.aspx"><i class="fa-solid fa-reply"></i>Geri </a></h2>
+        <h2 class="mt-2 mb-2"><a class="link text-decoration-none text-dark" href="campaignMenus.aspx"><i class="fa-solid fa-reply"></i>Geri </a></h2>
         <asp:Literal ID="ltrl_imgpm" Text="text" runat="server" />
         
         <div class="content">

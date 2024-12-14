@@ -26,6 +26,7 @@
 </style>
 <body>
     <form id="form1" class="p-0 m-0" runat="server">
+
         <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 m-0">
             <div class="container-fluid p-0 m-0">
                 <div class="navbar-collapse p-0 m-0" id="navbarNav" style="background-color: #C9B070; border-bottom: 2px solid black">
@@ -34,7 +35,7 @@
                             <a class="nav-link text-white fw-bold" aria-current="page" href="Index.aspx">Anasayfa</a>
                         </li>
                         <li class="nav-item px-5 mt-1 ">
-                            <a class="nav-link text-white fw-bold" href="#">LOGO </a>
+                            <a class="nav-link text-white fw-bold">LOGO </a>
                         </li>
                         <li class="nav-item px-5 mt-1">
                             <a class="nav-link text-white fw-bold" href="campaignMenus.aspx">Kampanyalar</a>
@@ -68,7 +69,7 @@
                                 </div>
                                 <div class="col-md-2 mb-1">
                                     <h6 class="text-uppercase font-weight-bold">
-                                        <a href="campaignMenus.aspx" class="text-white text-decoration-none">Menüler</a>
+                                        <a href="campaignMenus.aspx" class="text-white text-decoration-none">Kampanyalı Menüler</a>
                                     </h6>
                                 </div>
                                 <div class="col-md-2 mb-1">

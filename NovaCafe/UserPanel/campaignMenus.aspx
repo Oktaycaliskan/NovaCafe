@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
         <div class="row">
-            <h3 class="text-center mt-2 mb-2">Menüler</h3>
+            <h3 class="text-center mt-2 mb-2">Kampanyalı Menüler</h3>
             <hr />
             <asp:Repeater ID="campaignMenusrpt" runat="server">
                 <ItemTemplate>
